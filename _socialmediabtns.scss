@@ -1,0 +1,96 @@
+.socialmedia {
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: fixed;
+  z-index: 1;
+  right: 0px;
+}
+
+span{
+
+    text-decoration: underline;
+    color: white;
+    font-size: 20px;
+    padding-left: $padright;
+}
+
+.blog {
+  background-color: #e17b77;
+  padding-right:$padright;
+  transform: translateX(75%);
+  transition: transform 1s ease-in-out;
+  &:hover{
+    transform: translateX(0);
+  }
+  
+  .fa-laptop-code::before {
+    content: "\f5fc";
+    @include font-awesome();
+  }
+}
+
+.facebook {
+  background-color: #3b5998;
+  padding-right: $padright;
+  transform: translateX(77%);
+  transition: transform 1s ease-in-out;
+  &:hover{
+    transform: translateX(0);
+  }
+
+  .fa-facebook::before {
+    content: "\f39e";
+    @include font-awesome();
+  }
+}
+
+.twitter {
+  background-color: #00aced;
+  padding-right:$padright;
+  transform: translateX(76%);
+  transition: transform 1s ease-in-out;
+  &:hover{
+    transform: translateX(0);
+  }
+
+  .fa-twitter::before {
+    content: "\f099";
+    @include font-awesome();
+  }
+}
+
+.linkedin {
+  background-color: #007bb6;
+  padding-right:$padright;
+  transform: translateX(75%);
+  transition: transform 1s ease-in-out;
+  &:hover{
+    transform: translateX(0);
+  }
+
+  .fa-linkedin::before {
+    content: "\f0e1";
+    @include font-awesome();
+  }
+}
+
+.github {
+  background-color: #333;
+  padding-right:$padright;
+  transform: translateX(77%);
+  transition: transform 1s ease-in-out;
+  &:hover{
+    transform: translateX(0);
+  }
+
+  .fa-github::before {
+    content: "\f09b";
+    @include font-awesome();
+  }
+}
+
+

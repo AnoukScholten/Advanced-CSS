@@ -1,0 +1,80 @@
+.ul-2 {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1;
+  grid-row: 2;
+  list-style-type: none;
+  margin: 3rem;
+  max-width: 62.5rem;
+}
+
+.ul-2 > * {
+  flex: 1 1 30%;
+  position: relative;
+  margin-right: 0.625rem;
+  margin-top: 0.625rem;
+}
+
+.images {
+  border-radius: 5%;
+  position: relative;
+  height: 18.75rem;
+  width: 18.75rem;
+}
+
+.overlay {
+  background-color: rgba($color: #686de0, $alpha: 0.5);
+  border-radius: 5%;
+  position: absolute;
+  height: 18.75rem;
+  width: 18.75rem;
+  left: 0;
+  bottom: 0.25rem;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.ovl-button {
+  background-color: #c3cfe2;
+  position: absolute;
+  border-radius: 0.313rem;
+  height: 40px;
+  width: 90px;
+  left: 6.25rem;
+  bottom: 9.375rem;
+}
+
+@media screen and (max-width: 750px) {
+  .images {
+    border-radius: 5%;
+    position: relative;
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .overlay {
+    background-color: rgba($color: #686de0, $alpha: 0.5);
+    border-radius: 5%;
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    left: 0;
+    bottom: 0.25rem;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+
+    .ovl-button {
+      background-color: #c3cfe2;
+      position: absolute;
+      border-radius: 0.313rem;
+      height: 50px;
+      width: 100px;
+      left: 12rem;
+      bottom: 12rem;
+    }
+  }
+}

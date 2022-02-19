@@ -1,0 +1,58 @@
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px darkgrey, -8px 8px 8px darkgrey;
+    position: relative; 
+    margin: 3rem;
+    height: 28.125rem;
+    width: 20.938rem;  
+    
+}
+    .child-1{
+
+        color: darkgray;
+        font-family: $font;
+        padding: 5px; 
+    }
+
+    .child-2{
+        
+        background-color: $bluepurplecolor;
+        color: darkgray;
+        font-family: $font;
+        text-align: center;
+        border-bottom-left-radius:20px;
+        border-bottom-right-radius: 20px;
+        position: absolute;
+        padding: 5px;
+        height: 129px;
+        width: 325px;  
+        bottom:0;
+    }
+    
+        .child-2 h2{
+
+            color: white;
+            margin-top: 50px;
+        }
+            
+            
+            
+    .img-test{
+
+        object-fit: center;
+        background-color: white;
+        border: 5px solid white;
+        border-radius:round($number: 75%);
+        position: absolute;
+        width: 125px;
+        height: 125px;
+        bottom: 100px;    
+    }   
+
+
+ 

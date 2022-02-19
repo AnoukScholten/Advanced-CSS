@@ -1,0 +1,40 @@
+$bluepurplecolor: #686de0;
+$font:Verdana, Geneva, Tahoma, sans-serif; 
+$padright:0.5rem;
+
+@mixin flexb {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@mixin font-awesome {
+
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+    font-size: 30px;
+    color: white
+}
+
+@import './testimonial';
+@import './portfoliogrid';
+@import './socialmediabtns';
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+
+    background-color:#c3cfe2;
+}
+
+
+
+
+
+
+
+
